@@ -1,0 +1,11 @@
+http://powerupcloud.azurewebsites.net/2016/10/15/serverless-automate-ami-creation-and-deletion-using-aws-lambda/
+
+https://www.stratoscale.com/blog/cloud/aws-lambda-features-limitations-practical-examples/
+
+
+http://tech.adroll.com/blog/dev/2015/11/16/count-things-with-aws-lambda-python-and-dynamodb.html
+
+
+https://micropyramid.com/blog/using-aws-lambda-with-s3-and-dynamodb/
+
+
