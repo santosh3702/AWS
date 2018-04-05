@@ -20,7 +20,7 @@ def Thank_you():
     print "\n\nThank you for using this Script\nHave a great day\n"
     return None
 
-def run_cmd(cmd):
+def run_cmd_status(cmd):
     sp=Popen(cmd,shell=True,stdout=PIPE,stderr=PIPE)
     rt=sp.wait()
     out,err=sp.communicate()
@@ -44,7 +44,7 @@ except Exception as e:
     sys.exit(2)
 try:
     #print"Checking wget command"
-    wget_status=run_cmd('wget --version')
+    wget_status=run_cmd_status('wget --version')
     if wget_status=='':
         #print"out is none"
         print"Please wait installing wget command"
@@ -58,7 +58,7 @@ except Exception as e:
     sys.exit(3)
 try:
     #print"Checking pip command"
-    pip_status=pip_status=run_cmd('pip --version')
+    pip_status=pip_status=run_cmd_status('pip --version')
     if pip_status=='':
         print "Please wiat installing pip command"
         run_cmd("easy_install pip")
@@ -75,7 +75,7 @@ try:
         print"imported BeautifulSoup sucessfully"
     except Exception as e:
         print"Please wait installing the BeautifulSoup (bs4)"
-        run_cmd('pip install bs4')
+        run_cmd_status('pip install bs4')
 except Exception as e:
      print e
      print"Please rectify the error and try it"
