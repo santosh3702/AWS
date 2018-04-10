@@ -48,7 +48,7 @@ try:
     if wget_status=='':
         #print"out is none"
         print"Please wait installing wget command"
-        run_cmd("yum install wget -y")
+        run_cmd_status("yum install wget -y")
     else:
         print"satiesfied with wget command"
 except Exception as e:
@@ -61,7 +61,7 @@ try:
     pip_status=pip_status=run_cmd_status('pip --version')
     if pip_status=='':
         print "Please wiat installing pip command"
-        run_cmd("easy_install pip")
+        run_cmd_status("easy_install pip")
     else:
         print"Satiesfied with pip command"
 except Exception as e:
