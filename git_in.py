@@ -76,6 +76,7 @@ try:
     except Exception as e:
         print"Please wait installing the BeautifulSoup (bs4)"
         run_cmd_status('pip install bs4')
+	from bs4 import BeautifulSoup
 except Exception as e:
      print e
      print"Please rectify the error and try it"
