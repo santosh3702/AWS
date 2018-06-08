@@ -195,7 +195,8 @@ def install_git(href_link,usr_ver):
     os.system("./configure")
     os.system("make")
     os.system("make install")
-    #os.system("ln -s /usr/local/bin/git /bin/git")   
+    os.system("yum remove git -y")
+    os.system("ln -s /usr/local/bin/git /bin/git")   
 
 def new_install_git():
     href_link,ver_li=all_git_versions()
