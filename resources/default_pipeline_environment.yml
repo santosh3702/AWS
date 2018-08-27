@@ -1,0 +1,12 @@
+#Project Setup
+branch : 'master'
+skip_owasp : 'N'
+skip_sonar : 'N'
+days_to_keep : '5'
+builds_to_keep : '10'
+
+#Default JDK version set jdk1.8.0_60 from jdk1.7.0_60,jdk1.6.0_31,jdk1.8.0_60,jdk1.8.0_172
+java_version : 'jdk1.8.0_60'
+
+#Default maven version set Maven_3.5.3 from Maven_3.0.3,Maven 3.0.5,Maven 3.3.9, Maven_3.5.3
+maven_version : 'Maven_3.5.3'
