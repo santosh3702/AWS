@@ -1,0 +1,9 @@
+unclassified:
+  sonarGlobalConfiguration:
+    installations:
+    - name: "SonarQube"
+      serverAuthenticationToken: "b035c32db2405002e72d4d6ee02b5a98e2d2548c"
+      serverUrl: "http://sonarqube.hcldevopscoe.com"
+      triggers:
+        skipScmCause: false
+        skipUpstreamCause: false
