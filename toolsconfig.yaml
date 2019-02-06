@@ -1,0 +1,26 @@
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  jdk:
+    defaultProperties:
+    - installSource:
+        installers:
+        - jdkInstaller:
+            acceptLicense: false
+    installations:
+    - home: "/opt/java/jdk1.8.0_131"
+      name: "JDK_8"
+  msBuildSQRunnerInstallation:
+    installations:
+    - name: "sonarAWS"
+      properties:
+      - installSource:
+          installers:
+          - msBuildSonarQubeRunnerInstaller:
+              id: "4.5.0.1761"
+  sonarRunnerInstallation:
+    installations:
+    - home: "/opt/sonarqube_scanner/sonar-scanner-3.2.0.1227-linux"
+      name: "sonar-scanner"
