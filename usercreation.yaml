@@ -15,7 +15,7 @@ jenkins:
   authorizationStrategy:
     globalMatrix:
       grantedPermissions:
-		- "Overall/Read:anonymous"
-    - "Overall/Read:demo"
-    - "Overall/Administer:authenticated"
-		- "Overall/Administer:admin"
+	- "Overall/Read:anonymous"
+        - "Overall/Read:demo"
+        - "Overall/Administer:authenticated"
+	- "Overall/Administer:admin"
