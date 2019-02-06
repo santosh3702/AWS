@@ -1,0 +1,13 @@
+unclassified:
+  jiraProjectProperty:
+    sites:
+    - alternativeUrl: "http://jira:8080/"
+      url: "http://jira:8080/"
+      useHTTPAuth: true
+      supportsWikiStyleComment: true
+      recordScmChanges: true
+      disableChangelogAnnotations: false
+      readTimeout: 30
+      timeout: 10
+      threadExecutorNumber: 10
+      appendChangeTimestamp: true
