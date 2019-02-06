@@ -11,11 +11,10 @@ jenkins:
       users:
       - id: demo
         password: demo
-		
   authorizationStrategy:
     globalMatrix:
       grantedPermissions:
-	- "Overall/Read:anonymous"
+        - "Overall/Read:anonymous"
         - "Overall/Read:demo"
         - "Overall/Administer:authenticated"
-	- "Overall/Administer:admin"
+        - "Overall/Administer:admin"
