@@ -1,3 +1,21 @@
+jenkins:
+  systemMessage: "Welcome to my Jenkins instance!"
+
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+      - id: admin
+        password: admin@123
+  authorizationStrategy:
+    globalMatrix:
+      grantedPermissions:
+        - "Overall/Administer:authenticated"
+        - "Overall/Administer:admin"
 tool:
   git:
     installations:
