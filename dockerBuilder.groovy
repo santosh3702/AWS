@@ -1,3 +1,7 @@
+import java.lang.System
+import java.io.File
+import hudson.model.*
+import jenkins.model.*
 import org.jenkinsci.plugins.dockerbuildstep.*
 import net.sf.json.JSONObject
 import org.kohsuke.stapler.StaplerRequest
