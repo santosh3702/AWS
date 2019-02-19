@@ -1,0 +1,25 @@
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+      
+  maven:
+    installations:
+    - home: "/opt/maven/apache-maven-3.5.4"
+      name: "Maven"
+  
+  jdk:
+    defaultProperties:
+    - installSource:
+        installers:
+        - jdkInstaller:
+            acceptLicense: false
+    installations:
+    - home: "/opt/java/jdk1.8.0_131"
+      name: "JDK_8"
+      
+  sonarRunnerInstallation:
+    installations:
+    - home: "/opt/sonarqube_scanner/sonar-scanner-3.2.0.1227-linux"
+      name: "sonar-scanner-3.2.0.1227"
